@@ -8,31 +8,41 @@ Web application game , hit approaching enemy spaceships
 
 ### Project structure
 ```
-├─ Rocket_Ship
-│  ├─ index.html
-│  └─ public
-│     ├─ css
-│     │  ├─ StyleSheet.css
-│     │  ├─ font-awesome.min.css
-│     │  └─ w3.css
-│     ├─ img
-│     │  ├─ Fightspace.jpg
-│     │  ├─ Space.jpg
-│     │  ├─ boom.jpg
-│     │  ├─ generalShip.bmp
-│     │  ├─ keyboard.png
-│     │  ├─ mothership.bmp
-│     │  ├─ regship.bmp
-│     │  ├─ shipFighter.jpg
-│     │  └─ spaceship.png
-│     ├─ js
-│     │  ├─ app.js
-│     │  ├─ jquery.color-2.1.2.min.js
-│     │  └─ jquery.min.js
-│     └─ sound
-│        ├─ Explosion.mp3
-│        ├─ SpaceLaserShot.mp3
-│        └─ spaceGameLoop_mp3.mp3
+Rocket_Ship
+├─ .gitignore
+├─ README.MD
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ css
+│  │  ├─ StyleSheet.css
+│  │  ├─ font-awesome.min.css
+│  │  └─ w3.css
+│  ├─ img
+│  │  ├─ Fightspace.jpg
+│  │  ├─ Space.jpg
+│  │  ├─ boom.jpg
+│  │  ├─ generalShip.bmp
+│  │  ├─ keyboard.png
+│  │  ├─ mothership.bmp
+│  │  ├─ regship.bmp
+│  │  ├─ shipFighter.jpg
+│  │  └─ spaceship.png
+│  ├─ js
+│  │  ├─ app.js
+│  │  ├─ jquery.color-2.1.2.min.js
+│  │  └─ jquery.min.js
+│  └─ sound
+│     ├─ Explosion.mp3
+│     ├─ SpaceLaserShot.mp3
+│     └─ spaceGameLoop_mp3.mp3
+├─ src
+│  └─ app.js
+└─ templates
+   └─ views
+      ├─ 404.hbs
+      └─ index.hbs
+
 ```
 index.html
 ```html
