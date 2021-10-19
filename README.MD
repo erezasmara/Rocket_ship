@@ -1,4 +1,4 @@
-# Whack a Mole Game 
+# Rocket space ship Game 
 
 ### Description:
 Web application game , hit approaching enemy spaceships
