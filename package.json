@@ -1,0 +1,19 @@
+{
+  "name": "rocket_ship",
+  "version": "1.0.0",
+  "description": "### Description: Web application game , hit approaching enemy spaceships #### Pictures: ![''](https://user-images.githubusercontent.com/33747218/137724188-c7b33d89-3dc0-47e2-bb63-9cdfd28d2589.png) ![''](https://user-images.githubusercontent.com/33747218/137724203-7188b1ff-a5de-42e0-b773-2272f7b79bad.png)",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js -e js,hbs"
+  },
+  "author": "",
+  "license": "ISC"
+}
