@@ -77,6 +77,7 @@ function shipType()
 function start() {
     //changing game instruction
     $("#header").html("השתמש בחצים כדי לזוז ולירות").css('color' , 'yellow');
+     document.getElementById('startButton').style.display = 'none';
    
     //start and loop background music
     myAudio = new Audio('./public/sound/spaceGameLoop_mp3.mp3'); 
@@ -240,6 +241,8 @@ function compareForStop() {
         if (totalFinishGame > 100) {
             alert("Well done, you've reached 100 points!")
             window.location.reload();
+            document.getElementById('startButton').style.display = '';
+
         }
 
 
@@ -249,3 +252,32 @@ function compareForStop() {
 }
 
 //this game made by erez Asmara
+
+
+function mobileKeyLeft() {
+    var leftArrow = parseInt($('.shooter').css('left'));
+    if (leftArrow < 350) {
+        $(".shooter").css({ left: "+="+8 })
+        $(".bullet").css({ left: "+=" + stopMoveFire })
+
+    }
+
+}
+
+
+function mobileKeyRight() {
+    var rightArrow = parseInt($('.shooter').css('left'));
+    if (rightArrow > 0) {
+        $(".shooter").css({ left: "-="+8 })
+        $(".bullet").css({ left: "-=" + stopMoveFire })
+    }
+
+}
+
+
+function mobileKeyFire() {
+    upKey = 0; //stop the shooting until the animation complete
+    stopMoveFire = 0;// when we take fire stop the bullet from move right or left
+    fire();
+
+}
